@@ -35,8 +35,15 @@
 }
 
 :root {
-  /* Sticky Header: py-6×2 + logo+tagline ≈ 96–104px; verified in 05-02-SUMMARY */
+  /* Sticky Header clearance for hash targets (measured 2026-07-11) */
   --header-scroll-offset: 104px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Header taller when nav+CTA wrap (~144px measured @768) */
+  :root {
+    --header-scroll-offset: 152px;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

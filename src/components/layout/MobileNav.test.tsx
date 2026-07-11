@@ -1,7 +1,11 @@
-import { expect, test } from "vitest";
+import { expect, test, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { MobileNav } from "./MobileNav";
+
+vi.mock("next/navigation", () => ({
+  usePathname: () => "/network",
+}));
 
 test("mobile nav opens on toggle and closes on Escape", async () => {
   const user = userEvent.setup();

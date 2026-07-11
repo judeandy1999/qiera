@@ -1,12 +1,24 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 
 import type { NavItem } from "@/data/navigation";
+import { isNavItemActive } from "@/lib/nav-active";
+import { cn } from "@/lib/cn";
 
 export function MobileNav({ items }: { items: NavItem[] }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const [open, setOpen] = useState(false);
+  const pathname = usePathname() ?? "/";
+  const [hash, setHash] = useState("");
+
+  useEffect(() => {
+    const sync = () => setHash(window.location.hash.replace(/^#/, ""));
+    sync();
+    window.addEventListener("hashchange", sync);
+    return () => window.removeEventListener("hashchange", sync);
+  }, []);
 
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -62,17 +74,31 @@ export function MobileNav({ items }: { items: NavItem[] }) {
         </div>
         <nav aria-label="Mobile" className="mt-4">
           <ul className="flex flex-col gap-2">
-            {items.map((item) => (
-              <li key={item.href}>
-                <a
-                  href={item.href}
-                  onClick={() => setOpen(false)}
-                  className="flex min-h-11 items-center rounded text-[16px] font-normal leading-[1.5] text-[var(--color-text-primary)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-secondary)]"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
+            {items.map((item) => {
+              const active = isNavItemActive(pathname, hash, item.href);
+              return (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    aria-current={active ? "page" : undefined}
+                    onClick={() => {
+                      if (item.href.startsWith("/#")) {
+                        setHash(item.href.slice(2));
+                      }
+                      setOpen(false);
+                    }}
+                    className={cn(
+                      "flex min-h-11 items-center rounded text-[16px] font-normal leading-[1.5] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-secondary)]",
+                      active
+                        ? "text-[var(--color-accent)]"
+                        : "text-[var(--color-text-primary)]",
+                    )}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </dialog>

@@ -17,14 +17,14 @@
 
 ### Homepage
 
-- [ ] **HOME-01**: Homepage includes Header, Hero, Intelligence, Process, Solutions, Leverages, Final CTA, Footer in that order
-- [ ] **HOME-02**: Section IDs `intelligence`, `process`, `solutions`, `leverages` support hash navigation with sticky-header offset
-- [ ] **HOME-03**: Hero matches `top section.png` (copy, CTA, operating-model graphic)
-- [ ] **HOME-04**: Intelligence section shows 12 dimensions with carousel controls and **modal** detail views matching Intelligence cards
+- [x] **HOME-01**: Homepage includes Header, Hero, Intelligence, Process, Solutions, Leverages, Final CTA, Footer in that order
+- [x] **HOME-02**: Section IDs `intelligence`, `process`, `solutions`, `leverages` support hash navigation with sticky-header offset
+- [x] **HOME-03**: Hero matches `top section.png` (copy, CTA, operating-model graphic)
+- [x] **HOME-04**: Intelligence section shows 12 dimensions with carousel controls and **modal** detail views matching Intelligence cards
 - [x] **HOME-05**: Process section shows **6-step** overview and **modal** detail views for each step (no Orchestrate Competency)
 - [x] **HOME-06**: Solutions section provides tabbed selector for 10 challenges; deeper detail (if opened from UI) uses the shared **modal** pattern matching references
 - [x] **HOME-07**: Leverages section shows 11 cards with responsive grid/carousel and **modal** details; **no** Share/Download controls
-- [ ] **HOME-08**: Final CTA is a derived dark band using primary/secondary button styles; copy lives in typed data
+- [x] **HOME-08**: Final CTA is a derived dark band using primary/secondary button styles; copy lives in typed data
 - [x] **HOME-09**: Shared detail modal supports keyboard nav, Escape close, focus trap, focus restore, mobile full/near-full screen, and `prefers-reduced-motion`
 
 ### Network
@@ -97,9 +97,9 @@
 | HOME-05 | 3 | Complete |
 | HOME-06 | 4 | Complete |
 | HOME-07 | 4 | Complete |
-| HOME-01 | 5 | Pending |
-| HOME-02 | 5 | Pending |
-| HOME-08 | 5 | Pending |
+| HOME-01 | 5 | Complete |
+| HOME-02 | 5 | Complete |
+| HOME-08 | 5 | Complete |
 | NET-01 | 6 | Pending |
 | NET-02 | 6 | Pending |
 | FORM-01 | 7 | Pending |
