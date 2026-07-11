@@ -33,6 +33,18 @@ test("primaryCta has the locked label and href", () => {
   expect(primaryCta.href).toBe("/start-intelligence-audit");
 });
 
+test("primaryNav homepage hashes target the four section ids", () => {
+  const hashes = primaryNav
+    .filter((item) => item.href.startsWith("/#"))
+    .map((item) => item.href);
+  expect(hashes).toEqual([
+    "/#intelligence",
+    "/#process",
+    "/#solutions",
+    "/#leverages",
+  ]);
+});
+
 test("legalNav contains exactly the locked legal link set, in order", () => {
   const labels = legalNav.map((item) => item.label);
   expect(labels).toEqual(["Privacy Policy", "Terms of Use", "Cookie Policy"]);

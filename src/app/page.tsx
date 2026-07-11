@@ -3,6 +3,7 @@ import { IntelligenceSection } from "@/components/sections/IntelligenceSection";
 import { ProcessSection } from "@/components/sections/ProcessSection";
 import { SolutionsSection } from "@/components/sections/SolutionsSection";
 import { LeveragesSection } from "@/components/sections/LeveragesSection";
+import { FinalCtaSection } from "@/components/sections/FinalCtaSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <ProcessSection />
       <SolutionsSection />
       <LeveragesSection />
+      <FinalCtaSection />
     </>
   );
 }

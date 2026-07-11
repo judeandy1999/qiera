@@ -17,7 +17,7 @@ Build the QIERA marketing site by establishing shell/tokens first, then homepage
 | 2 | Hero & Intelligence | 7/7 | Complete   | 2026-07-11 |
 | 3 | Process | 5/5 | Complete   | 2026-07-11 |
 | 4 | Solutions & Leverages | 7/7 | Complete   | 2026-07-11 |
-| 5 | CTA & Homepage Polish | Derived Final CTA, hash nav, homepage fidelity | HOME-01, HOME-02, HOME-08 | 4 |
+| 5 | CTA & Homepage Polish | Derived Final CTA, hash nav, homepage fidelity | HOME-01, HOME-02, HOME-08 | 3 |
 | 6 | Network | Full Network page; partner CTA → contact | NET-01, NET-02 | 4 |
 | 7 | Forms | Contact + Audit + typed handlers (no fake send) | FORM-01–05 | 5 |
 | 8 | Legal & Utility | Provisional legal pages + 404 | LEGAL-01–02, UTIL-01 | 4 |
@@ -247,7 +247,15 @@ Plans:
 **Goal:** Derived Final CTA, hash nav, homepage visual pass.  
 **UI hint:** yes  
 **Requirements:** HOME-01, HOME-02, HOME-08  
-**Reference files:** Full homepage set; Header; Footer; CTA treatments from hero/header buttons
+**Plans:** 3 plans (3 waves)
+
+Plans:
+
+- [ ] 05-01-PLAN.md — Wave 1: Types + final-cta data + FinalCtaSection RSC + page wire [HOME-01, HOME-08]
+- [ ] 05-02-PLAN.md — Wave 2: Hash/scroll-mt polish + anchors smoke [HOME-02]
+- [ ] 05-03-PLAN.md — Wave 3: Homepage screenshots + human visual sign-off [HOME-01, HOME-02, HOME-08]
+
+**Reference files:** Full homepage set; Header; Footer; CTA treatments from hero/header buttons; Audit utility page strings for derived Final CTA
 
 **Implementation scope:**
 
@@ -265,7 +273,7 @@ Plans:
 
 **Tests:** Hash navigation smoke; CTA links resolve  
 **Screenshot widths:** 1440, 1280, 768, 390  
-**Unresolved questions:** Exact Final CTA headline/body may be drafted in data and refined during visual pass (not a Phase 1 blocker)
+**Unresolved questions:** None — Final CTA strings locked in 05-CONTEXT / 05-UI-SPEC (derived from Audit + Hero/Header refs; no dedicated Final CTA PNG)
 
 ---
 

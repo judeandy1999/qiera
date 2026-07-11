@@ -2,9 +2,9 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: phase_complete
-stopped_at: Phase 4 complete — ready for Phase 5
-last_updated: "2026-07-11T13:35:00.000Z"
+status: context_ready
+stopped_at: Phase 5 CONTEXT.md ready — next UI-SPEC then plan
+last_updated: "2026-07-11T13:45:00.000Z"
 progress:
   total_phases: 10
   completed_phases: 4
@@ -16,12 +16,12 @@ progress:
 # Project State
 
 **Project:** QIERA Marketing Website  
-**Status:** Phase 4 complete  
+**Status:** Phase 5 — context locked  
 **Last updated:** 2026-07-11
 
 **Current focus:** Phase 5 — CTA, Nav Wiring & Homepage Refinement  
-**Stopped at:** Phase 4 complete (human visual approve)
+**Stopped at:** `05-CONTEXT.md` written (copy-from-images lock)
 
 ## Next
 
-Start Phase 5: `/gsd-discuss-phase 5` or `/gsd-plan-phase 5` (CTA, hash nav, homepage polish — HOME-01, HOME-02, HOME-08).
+`/gsd-ui-phase 5` → then `/gsd-plan-phase 5` (or say **continue** to run UI-SPEC + plan).

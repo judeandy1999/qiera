@@ -65,7 +65,7 @@ export function LeveragesSection() {
     <>
       <section
         id="leverages"
-        className="scroll-mt-[72px] bg-[var(--color-surface)]"
+        className="scroll-mt-[length:var(--header-scroll-offset)] bg-[var(--color-surface)]"
       >
         <div className="mx-auto max-w-[var(--container-max)] px-4 py-12 md:px-6 md:py-14 lg:px-8 lg:py-16">
           <div className="mb-10 flex flex-wrap items-start justify-between gap-6">

@@ -34,6 +34,17 @@
   --container-max: 1280px;
 }
 
+:root {
+  /* Sticky Header: py-6×2 + logo+tagline ≈ 96–104px; verified in 05-02-SUMMARY */
+  --header-scroll-offset: 104px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   background: var(--color-shell);
   color: var(--color-text-primary);
