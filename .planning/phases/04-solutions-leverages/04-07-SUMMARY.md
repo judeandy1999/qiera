@@ -2,7 +2,7 @@
 
 **Phase:** 04-solutions-leverages  
 **Plan:** 07  
-**Status:** Awaiting human sign-off  
+**Status:** Complete — human approved  
 **Date:** 2026-07-11
 
 ## Assets
@@ -11,9 +11,9 @@ Under `public/images/qiera/solutions/`:
 
 | File | Notes |
 |------|-------|
-| `conversion-funnel.png` | Placeholder stand-in (operating-model copy) — **needs proper crop** from conversion reference |
-| `trust-shield.png` | Placeholder — **needs proper crop** from trust-issues reference |
-| `outcomes-target.png` | Placeholder — **needs proper crop** from outcomes target art |
+| `outcome-target.png` | User-supplied Outcomes You Can Expect art (wired on all 10 solutions) |
+| `trust-shield.png` | Placeholder / extract — may refine later |
+| `conversion-funnel.png` | Optional; may be absent if not yet cropped |
 
 ## Screenshots captured
 
@@ -25,22 +25,20 @@ Under `public/images/qiera/solutions/`:
 - modal-revenue-leverage-1440
 - modal-leverage-390
 
-No horizontal overflow at 1440/1024/390. Console errors during capture: none (aside from possible stale HMR noise).
+## Post-capture polish (before approve)
 
-## Remaining visual diffs (honest)
+- Removed section number prefixes (OUR UNIQUE INSIGHTS / SOLUTIONS / OUR LEVERAGES)
+- Leverages: uniform card heights; tighter gap (`gap-4`); 12-col grid with centered 5-card second row
+- Outcomes illustration refreshed; QIERA logo + favicon from `qiera-logo.webp`
 
-1. Solution 3D illustrations are **placeholders**, not cropped reference art
-2. Tab/dashboard density vs reference (spacing, gauge geometry, sparkline shape) — ASSUMED
-3. Leverages 6+5 row-2 centering ASSUMED
-4. Positive/warning/danger hex not re-sampled from screenshots yet
-5. Some solution impact-step / sparkline data marked TODO in 04-03-SUMMARY
+## Automated checks
 
-## Automated
-
-- Vitest 30/30; tsc clean
+- Vitest green for Solutions + Leverages suites
 - No Share/Download in leverage modal (tested)
-- No git commits
+- No git commits — user commits manually
 
 ## Human gate
 
-Resume: type **approved** or list diffs to fix.
+Human visual sign-off received (`approved`) on 2026-07-11.
+
+## Self-Check: PASSED

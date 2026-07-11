@@ -22,10 +22,10 @@
 - [ ] **HOME-03**: Hero matches `top section.png` (copy, CTA, operating-model graphic)
 - [ ] **HOME-04**: Intelligence section shows 12 dimensions with carousel controls and **modal** detail views matching Intelligence cards
 - [x] **HOME-05**: Process section shows **6-step** overview and **modal** detail views for each step (no Orchestrate Competency)
-- [ ] **HOME-06**: Solutions section provides tabbed selector for 10 challenges; deeper detail (if opened from UI) uses the shared **modal** pattern matching references
-- [ ] **HOME-07**: Leverages section shows 11 cards with responsive grid/carousel and **modal** details; **no** Share/Download controls
+- [x] **HOME-06**: Solutions section provides tabbed selector for 10 challenges; deeper detail (if opened from UI) uses the shared **modal** pattern matching references
+- [x] **HOME-07**: Leverages section shows 11 cards with responsive grid/carousel and **modal** details; **no** Share/Download controls
 - [ ] **HOME-08**: Final CTA is a derived dark band using primary/secondary button styles; copy lives in typed data
-- [ ] **HOME-09**: Shared detail modal supports keyboard nav, Escape close, focus trap, focus restore, mobile full/near-full screen, and `prefers-reduced-motion`
+- [x] **HOME-09**: Shared detail modal supports keyboard nav, Escape close, focus trap, focus restore, mobile full/near-full screen, and `prefers-reduced-motion`
 
 ### Network
 
@@ -93,10 +93,10 @@
 | FOUND-05 | 1 | Complete |
 | HOME-03 | 2 | Complete |
 | HOME-04 | 2 | Complete |
-| HOME-09 | 2–3 | Complete |
+| HOME-09 | 2–4 | Complete |
 | HOME-05 | 3 | Complete |
-| HOME-06 | 4 | Pending |
-| HOME-07 | 4 | Pending |
+| HOME-06 | 4 | Complete |
+| HOME-07 | 4 | Complete |
 | HOME-01 | 5 | Pending |
 | HOME-02 | 5 | Pending |
 | HOME-08 | 5 | Pending |

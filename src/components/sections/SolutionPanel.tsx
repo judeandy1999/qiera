@@ -196,7 +196,7 @@ export function SolutionPanel({ challenge }: SolutionPanelProps) {
             {challenge.outcomesIllustrationSrc ? (
               <div className="relative mx-auto aspect-square w-44 shrink-0 sm:mx-0 sm:w-48">
                 <Image
-                  src="/images/qiera/solutions/outcome-target.png"
+                  src={challenge.outcomesIllustrationSrc}
                   alt="3D target with arrow in the bullseye"
                   fill
                   className="object-contain"

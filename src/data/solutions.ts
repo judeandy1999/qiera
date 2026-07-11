@@ -107,7 +107,7 @@ export const solutions: SolutionChallenge[] = [
       { icon: "shieldCheck", label: "Stronger margins and profitability" },
       { icon: "scale", label: "Sustainable, measurable growth" },
     ],
-    outcomesIllustrationSrc: "/images/qiera/solutions/outcomes-target.png",
+    outcomesIllustrationSrc: "/images/qiera/solutions/outcome-target.png",
   },
   {
     id: "growth-constraints",
@@ -213,7 +213,7 @@ export const solutions: SolutionChallenge[] = [
       { icon: "target", label: "Better alignment across teams and priorities" },
       { icon: "rocket", label: "Scalable systems for sustained growth" },
     ],
-    outcomesIllustrationSrc: "/images/qiera/solutions/outcomes-target.png",
+    outcomesIllustrationSrc: "/images/qiera/solutions/outcome-target.png",
   },
   {
     id: "conversion-problems",
@@ -324,7 +324,7 @@ export const solutions: SolutionChallenge[] = [
       { icon: "users", label: "More customers, less acquisition spend" },
       { icon: "rocket", label: "Continuous improvement and compounding growth" },
     ],
-    outcomesIllustrationSrc: "/images/qiera/solutions/outcomes-target.png",
+    outcomesIllustrationSrc: "/images/qiera/solutions/outcome-target.png",
   },
   {
     id: "ai-visibility",
@@ -452,7 +452,7 @@ export const solutions: SolutionChallenge[] = [
         label: "Sustainable competitive advantage in AI search",
       },
     ],
-    outcomesIllustrationSrc: "/images/qiera/solutions/outcomes-target.png",
+    outcomesIllustrationSrc: "/images/qiera/solutions/outcome-target.png",
   },
   {
     id: "seo-authority",
@@ -568,7 +568,7 @@ export const solutions: SolutionChallenge[] = [
         label: "Sustainable competitive advantage in search",
       },
     ],
-    outcomesIllustrationSrc: "/images/qiera/solutions/outcomes-target.png",
+    outcomesIllustrationSrc: "/images/qiera/solutions/outcome-target.png",
   },
   {
     id: "trust-issues",
@@ -695,7 +695,7 @@ export const solutions: SolutionChallenge[] = [
         label: "Sustainable growth through trusted relationships",
       },
     ],
-    outcomesIllustrationSrc: "/images/qiera/solutions/outcomes-target.png",
+    outcomesIllustrationSrc: "/images/qiera/solutions/outcome-target.png",
   },
   {
     id: "retention-problems",
@@ -813,7 +813,7 @@ export const solutions: SolutionChallenge[] = [
         label: "Improved profitability and sustainable growth",
       },
     ],
-    outcomesIllustrationSrc: "/images/qiera/solutions/outcomes-target.png",
+    outcomesIllustrationSrc: "/images/qiera/solutions/outcome-target.png",
   },
   {
     id: "positioning-problems",
@@ -944,7 +944,7 @@ export const solutions: SolutionChallenge[] = [
         label: "Sustainable competitive advantage",
       },
     ],
-    outcomesIllustrationSrc: "/images/qiera/solutions/outcomes-target.png",
+    outcomesIllustrationSrc: "/images/qiera/solutions/outcome-target.png",
   },
   {
     id: "competitive-pressure",
@@ -1082,7 +1082,7 @@ export const solutions: SolutionChallenge[] = [
         label: "Sustainable competitive advantage",
       },
     ],
-    outcomesIllustrationSrc: "/images/qiera/solutions/outcomes-target.png",
+    outcomesIllustrationSrc: "/images/qiera/solutions/outcome-target.png",
   },
   {
     id: "operational-bottlenecks",
@@ -1219,6 +1219,6 @@ export const solutions: SolutionChallenge[] = [
         label: "Stronger ability to grow without increasing costs",
       },
     ],
-    outcomesIllustrationSrc: "/images/qiera/solutions/outcomes-target.png",
+    outcomesIllustrationSrc: "/images/qiera/solutions/outcome-target.png",
   },
 ];

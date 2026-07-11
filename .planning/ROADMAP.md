@@ -16,7 +16,7 @@ Build the QIERA marketing site by establishing shell/tokens first, then homepage
 | 1 | Foundation & Shell | Tokens, Geist, header, footer, architecture | FOUND-01–05 | 6 |
 | 2 | Hero & Intelligence | 7/7 | Complete   | 2026-07-11 |
 | 3 | Process | 5/5 | Complete   | 2026-07-11 |
-| 4 | Solutions & Leverages | 7/7 | Planned    | — |
+| 4 | Solutions & Leverages | 7/7 | Complete   | 2026-07-11 |
 | 5 | CTA & Homepage Polish | Derived Final CTA, hash nav, homepage fidelity | HOME-01, HOME-02, HOME-08 | 4 |
 | 6 | Network | Full Network page; partner CTA → contact | NET-01, NET-02 | 4 |
 | 7 | Forms | Contact + Audit + typed handlers (no fake send) | FORM-01–05 | 5 |
@@ -196,22 +196,24 @@ Plans:
 
 **Wave 1**
 
-- [ ] 04-01-PLAN.md — Wave 1: Color tokens + IntelligenceIcon Phase 4 keys [HOME-06, HOME-07]
-- [ ] 04-02-PLAN.md — Wave 1: ProgressBar / GaugeChart / Sparkline CSS-SVG primitives [HOME-06, HOME-07]
-- [ ] 04-03-PLAN.md — Wave 1: Solutions types + 10 challenge data objects [HOME-06]
+- [x] 04-01-PLAN.md — Wave 1: Color tokens + IntelligenceIcon Phase 4 keys [HOME-06, HOME-07]
+- [x] 04-02-PLAN.md — Wave 1: ProgressBar / GaugeChart / Sparkline CSS-SVG primitives [HOME-06, HOME-07]
+- [x] 04-03-PLAN.md — Wave 1: Solutions types + 10 challenge data objects [HOME-06]
 
 **Wave 2** *(blocked on Wave 1 for Solutions UI; leverages data only needs 04-01)*
 
-- [ ] 04-04-PLAN.md — Wave 2: SolutionsSection + SolutionPanel + tests + page wire [HOME-06]
-- [ ] 04-05-PLAN.md — Wave 2: Leverages types + 11 leverage data objects [HOME-07]
+- [x] 04-04-PLAN.md — Wave 2: SolutionsSection + SolutionPanel + tests + page wire [HOME-06]
+- [x] 04-05-PLAN.md — Wave 2: Leverages types + 11 leverage data objects [HOME-07]
 
 **Wave 3** *(blocked on Wave 2)*
 
-- [ ] 04-06-PLAN.md — Wave 3: LeverageCard + LeverageDetail + LeveragesSection + tests + page wire [HOME-07, HOME-09]
+- [x] 04-06-PLAN.md — Wave 3: LeverageCard + LeverageDetail + LeveragesSection + tests + page wire [HOME-07, HOME-09]
 
 **Wave 4** *(blocked on Wave 3)*
 
-- [ ] 04-07-PLAN.md — Wave 4: Asset extracts + screenshots + human visual sign-off [HOME-06, HOME-07, HOME-09]
+- [x] 04-07-PLAN.md — Wave 4: Asset extracts + screenshots + human visual sign-off [HOME-06, HOME-07, HOME-09]
+
+**Status:** Complete (human visual approve 2026-07-11).
 
 **Reference files:**
 
