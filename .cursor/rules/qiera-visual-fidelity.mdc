@@ -1,0 +1,154 @@
+---
+description: QIERA visual fidelity and implementation rules
+alwaysApply: true
+---
+
+# QIERA Development Rules
+
+## Reference priority
+
+The visual reference images under:
+
+/docs/qiera-reference/
+
+are the primary visual source of truth.
+
+Do not redesign, modernize, simplify, reinterpret, or replace the supplied designs unless a reference is unclear or technically impossible.
+
+Before implementing a section:
+
+1. Locate all related reference images.
+2. Inspect them carefully.
+3. Identify layout geometry, spacing, typography, colors, gradients, shadows, borders, radii, artwork placement, and responsive implications.
+4. Implement the section.
+5. Run the application.
+6. Capture screenshots.
+7. Compare implementation against the references.
+8. Correct visible differences before marking the section complete.
+
+Never claim that the work is pixel-perfect unless browser screenshots have been compared with the supplied references.
+
+## Technical stack
+
+Use:
+
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- React Server Components by default
+- Client Components only where interaction requires them
+- next/image for supported raster images
+- next/font for fonts
+- ESLint
+- strict TypeScript
+
+Do not use the Pages Router.
+
+Do not introduce another styling framework.
+
+Do not install unnecessary libraries.
+
+Before installing any package, explain why native React, CSS, or the current stack is insufficient.
+
+## Architecture
+
+- Keep route files inside src/app.
+- Keep reusable components inside src/components.
+- Keep static typed content inside src/data.
+- Keep utility functions inside src/lib.
+- Keep public visual assets inside public/images/qiera.
+- Avoid placing every component inside one large page file.
+- Avoid excessive abstraction for one-off elements.
+- Reuse components where the same visual pattern appears repeatedly.
+
+## Next.js rules
+
+- Use Server Components by default.
+- Add "use client" only to interactive islands.
+- Do not turn the entire homepage into a Client Component.
+- Use metadata exports for titles and descriptions.
+- Use next/image with accurate alt text, dimensions, and sizes.
+- Only use priority for above-the-fold images.
+- Use semantic anchor IDs for homepage sections.
+- Account for the sticky header using scroll-margin-top.
+- Avoid unnecessary client-side state and effects.
+
+## Visual implementation order
+
+Match visual geometry in this order:
+
+1. overall page width
+2. section height
+3. layout grid
+4. alignment
+5. component dimensions
+6. typography
+7. spacing
+8. borders and radii
+9. colors and gradients
+10. shadows and fine details
+
+Do not spend time polishing tiny effects while major proportions are still incorrect.
+
+## Content rules
+
+- Transcribe visible text carefully.
+- Do not invent replacement copy when reference text is readable.
+- Record unclear text as a question.
+- Keep headings and content hierarchy faithful to the references.
+
+## Accessibility
+
+- Use semantic HTML.
+- Preserve a logical heading hierarchy.
+- Make tabs, accordions, carousels, navigation, and menus keyboard-operable.
+- Include visible focus states.
+- Use correct ARIA relationships.
+- Respect prefers-reduced-motion.
+- Do not use color alone to communicate state.
+- Use descriptive accessible labels.
+
+## Responsive behavior
+
+Validate at minimum:
+
+- 1440px
+- 1280px
+- 1024px
+- 768px
+- 390px
+- 360px
+
+Do not simply shrink desktop layouts.
+
+For smaller widths:
+
+- stack layouts intentionally
+- preserve hierarchy
+- prevent text clipping
+- avoid horizontal page overflow
+- use carousels or tabs where dense card rows do not fit
+- keep touch targets usable
+- preserve artwork aspect ratios
+
+## Verification
+
+After every implementation phase:
+
+1. Run lint.
+2. Run TypeScript checks.
+3. Run relevant tests.
+4. Start the development server.
+5. inspect browser console errors.
+6. Capture desktop and mobile screenshots.
+7. Compare against references.
+8. List remaining visual differences honestly.
+9. Fix major differences.
+
+## Git
+
+Do not commit code.
+
+The user will review and commit manually.
+
+Do not modify unrelated files.
