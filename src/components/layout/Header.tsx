@@ -11,9 +11,9 @@ export function Header() {
         <Logo showTagline />
         <PrimaryNavLinks
           items={primaryNav}
-          className="hidden items-center gap-4 md:flex"
+          className="hidden items-center gap-4 lg:flex"
         />
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Button href={primaryCta.href}>{primaryCta.label}</Button>
         </div>
         <MobileNav items={primaryNav} />

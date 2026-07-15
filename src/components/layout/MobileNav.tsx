@@ -3,7 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 
+import { Button } from "@/components/ui/Button";
 import type { NavItem } from "@/data/navigation";
+import { primaryCta } from "@/data/navigation";
 import { isNavItemActive } from "@/lib/nav-active";
 import { cn } from "@/lib/cn";
 
@@ -28,7 +30,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
   }, [open]);
 
   return (
-    <div className="md:hidden">
+    <div className="lg:hidden">
       <button
         type="button"
         aria-haspopup="dialog"
@@ -100,6 +102,15 @@ export function MobileNav({ items }: { items: NavItem[] }) {
               );
             })}
           </ul>
+          <div className="mt-8">
+            <Button
+              href={primaryCta.href}
+              className="w-full justify-center"
+              onClick={() => setOpen(false)}
+            >
+              {primaryCta.label}
+            </Button>
+          </div>
         </nav>
       </dialog>
     </div>

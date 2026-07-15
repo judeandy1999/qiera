@@ -53,7 +53,7 @@ export function SolutionsSection() {
         <div
           role="tablist"
           aria-label="Challenge areas"
-          className="mb-8 flex gap-2 overflow-x-auto pb-2 [scroll-snap-type:x_mandatory]"
+          className="mb-8 -mx-1 flex max-w-full gap-2 overflow-x-auto overscroll-x-contain px-1 pb-2 [scrollbar-width:thin] [scroll-snap-type:x_mandatory]"
         >
           {solutions.map((s, i) => {
             const selected = s.id === activeId;

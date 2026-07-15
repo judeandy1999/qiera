@@ -9,7 +9,14 @@ type LogoProps = {
 
 export function Logo({ className, showTagline }: LogoProps) {
   return (
-    <span className={cn("inline-flex flex-col", className)}>
+    <a
+      href="/"
+      aria-label="QIERA home"
+      className={cn(
+        "inline-flex flex-col rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-shell)]",
+        className,
+      )}
+    >
       <span className="inline-flex items-center gap-2">
         <Image
           src="/images/qiera-logo.webp"
@@ -29,6 +36,6 @@ export function Logo({ className, showTagline }: LogoProps) {
           E-commerce Growth Intelligence
         </span>
       )}
-    </span>
+    </a>
   );
 }

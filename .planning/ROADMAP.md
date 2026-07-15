@@ -18,10 +18,10 @@ Build the QIERA marketing site by establishing shell/tokens first, then homepage
 | 3 | Process | 5/5 | Complete   | 2026-07-11 |
 | 4 | Solutions & Leverages | 7/7 | Complete   | 2026-07-11 |
 | 5 | CTA & Homepage Polish | 3/3 | Complete   | 2026-07-11 |
-| 6 | Network | In progress | NET-01, NET-02 | 4 |
-| 7 | Forms | Contact + Audit + typed handlers (no fake send) | FORM-01–05 | 5 |
-| 8 | Legal & Utility | Provisional legal pages + 404 | LEGAL-01–02, UTIL-01 | 4 |
-| 9 | Responsive | Breakpoint refinement | RESP-01 | 3 |
+| 6 | Network | Complete | 2026-07-15 | 4 |
+| 7 | Forms | Complete | 2026-07-15 | FORM-01–05 |
+| 8 | Legal & Utility | Complete | 2026-07-15 | LEGAL-01–02, UTIL-01 |
+| 9 | Responsive | Complete | 2026-07-15 | RESP-01 |
 | 10 | A11y, Perf, Tests, Visual QA | Final quality gate | A11Y-01, PERF-01, TEST-01, VIS-01 | 4 |
 
 ---
@@ -286,6 +286,8 @@ Plans:
 **Requirements:** NET-01, NET-02  
 **Reference files:** `Network page/Network.png`
 
+**Status:** Complete (human visual approve 2026-07-15).
+
 **Implementation scope:**
 
 - Network hero + globe artwork
@@ -311,6 +313,14 @@ Plans:
 **Goal:** Validated forms with typed route handlers; honest states; no fake external send.  
 **UI hint:** yes  
 **Requirements:** FORM-01, FORM-02, FORM-03, FORM-04, FORM-05  
+**Plans:** 4 plans (see `.planning/phases/07-forms/`)  
+**Status:** Complete (human visual approve 2026-07-15).
+
+- [x] 07-01 — Options + validators + API routes  
+- [x] 07-02 — Contact page + form + topic preselect  
+- [x] 07-03 — Audit page + form  
+- [x] 07-04 — Screenshots + FORM-05 + human gate  
+
 **Reference files:**
 
 - `Utility pages/contact form.png`
@@ -345,6 +355,13 @@ Plans:
 **Goal:** Legal layout + provisional Privacy/Terms/Cookies + not-found.  
 **UI hint:** yes  
 **Requirements:** LEGAL-01, LEGAL-02, UTIL-01  
+**Plans:** 3 plans (see `.planning/phases/08-legal-utility/`)  
+**Status:** Complete (human visual approve 2026-07-15).
+
+- [x] 08-01 — Shared legal layout + TOC  
+- [x] 08-02 — Privacy / Terms / Cookies pages  
+- [x] 08-03 — not-found + screenshots + human gate  
+
 **Reference files:**
 
 - `Utility pages/privacy policy.png`
@@ -377,6 +394,13 @@ Plans:
 **Goal:** Intentional layouts at all target widths.  
 **UI hint:** yes  
 **Requirements:** RESP-01  
+**Plans:** 3 plans (see `.planning/phases/09-responsive/`)  
+**Status:** Complete (human visual approve 2026-07-15).
+
+- [x] 09-01 — Header/MobileNav `lg` + Audit in menu  
+- [x] 09-02 — Modal near-full + overflow polish  
+- [x] 09-03 — Six-width screenshots + human gate  
+
 **Reference files:** All desktop refs as proportion guides  
 
 **Implementation scope:**

@@ -29,27 +29,27 @@
 
 ### Network
 
-- [ ] **NET-01**: `/network` recreates Network.png; Become a Partner links to `/contact?topic=partnership`
-- [ ] **NET-02**: Network cards cover Experts, Resellers, Affiliates, White-label, Fractional Leadership, Delivery Partners, Strategic Alliances
+- [x] **NET-01**: `/network` recreates Network.png; Become a Partner links to `/contact?topic=partnership`
+- [x] **NET-02**: Network cards cover Experts, Resellers, Affiliates, White-label, Fractional Leadership, Delivery Partners, Strategic Alliances
 
 ### Forms
 
-- [ ] **FORM-01**: `/contact` implements Contact fields, labels, validation, loading/success/failure; honors `topic` query (e.g. partnership)
-- [ ] **FORM-02**: `/start-intelligence-audit` implements 5-step audit form; dropdown options from typed data files
-- [ ] **FORM-03**: Typed Next.js route handlers with client + server validation; document pending production integration; do not fake external submission success
-- [ ] **FORM-04**: Forms are keyboard accessible and responsive
-- [ ] **FORM-05**: Uncertain audit/contact option lists flagged in the phase implementation report
+- [x] **FORM-01**: `/contact` implements Contact fields, labels, validation, loading/success/failure; honors `topic` query (e.g. partnership)
+- [x] **FORM-02**: `/start-intelligence-audit` implements 5-step audit form; dropdown options from typed data files
+- [x] **FORM-03**: Typed Next.js route handlers with client + server validation; document pending production integration; do not fake external submission success
+- [x] **FORM-04**: Forms are keyboard accessible and responsive
+- [x] **FORM-05**: Uncertain audit/contact option lists flagged in the phase implementation report
 
 ### Legal & Utility
 
-- [ ] **LEGAL-01**: Shared legal layout for Privacy, Terms, Cookies with “On This Page” nav
-- [ ] **LEGAL-02**: Routes `/privacy`, `/terms`, `/cookies` with **provisional** copy transcribed only where clearly readable; no invented binding language; marked pending legal review
-- [ ] **UTIL-01**: Custom `not-found` page uses QIERA brand language
+- [x] **LEGAL-01**: Shared legal layout for Privacy, Terms, Cookies with “On This Page” nav
+- [x] **LEGAL-02**: Routes `/privacy`, `/terms`, `/cookies` with **provisional** copy transcribed only where clearly readable; no invented binding language; marked pending legal review
+- [x] **UTIL-01**: Custom `not-found` page uses QIERA brand language
 
 ### Quality
 
 - [ ] **A11Y-01**: Landmarks, heading order, focus states, ARIA for tabs/carousel/dialog/menu, reduced-motion support
-- [ ] **RESP-01**: Layouts validated at 1440, 1280, 1024, 768, 390, 360 without overflow/clipping
+- [x] **RESP-01**: Layouts validated at 1440, 1280, 1024, 768, 390, 360 without overflow/clipping
 - [ ] **PERF-01**: Static sections remain Server Components; interactive islands isolated; images sized correctly
 - [ ] **TEST-01**: Meaningful tests for nav, mobile menu, tabs, modal/carousel controls, form validation
 - [ ] **VIS-01**: Each phase compared to listed reference files via screenshots before marked complete
@@ -100,17 +100,17 @@
 | HOME-01 | 5 | Complete |
 | HOME-02 | 5 | Complete |
 | HOME-08 | 5 | Complete |
-| NET-01 | 6 | Pending |
-| NET-02 | 6 | Pending |
-| FORM-01 | 7 | Pending |
-| FORM-02 | 7 | Pending |
-| FORM-03 | 7 | Pending |
-| FORM-04 | 7 | Pending |
-| FORM-05 | 7 | Pending |
-| LEGAL-01 | 8 | Pending |
-| LEGAL-02 | 8 | Pending |
-| UTIL-01 | 8 | Pending |
-| RESP-01 | 9 | Pending |
+| NET-01 | 6 | Complete |
+| NET-02 | 6 | Complete |
+| FORM-01 | 7 | Complete |
+| FORM-02 | 7 | Complete |
+| FORM-03 | 7 | Complete |
+| FORM-04 | 7 | Complete |
+| FORM-05 | 7 | Complete |
+| LEGAL-01 | 8 | Complete |
+| LEGAL-02 | 8 | Complete |
+| UTIL-01 | 8 | Complete |
+| RESP-01 | 9 | Complete |
 | A11Y-01 | 10 | Pending |
 | PERF-01 | 10 | Pending |
 | TEST-01 | 10 | Pending |
@@ -123,4 +123,4 @@
 
 ---
 *Requirements defined: 2026-07-10*  
-*Last updated: 2026-07-10 after decision lock-in*
+*Last updated: 2026-07-15 — Phase 9 RESP-01 complete*

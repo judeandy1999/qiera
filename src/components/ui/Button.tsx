@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { MouseEventHandler, ReactNode } from "react";
 
 import { cn } from "@/lib/cn";
 
@@ -7,12 +7,20 @@ type ButtonProps = {
   variant?: "primary" | "secondary";
   className?: string;
   children: ReactNode;
+  onClick?: MouseEventHandler<HTMLAnchorElement>;
 };
 
-export function Button({ href, variant = "primary", className, children }: ButtonProps) {
+export function Button({
+  href,
+  variant = "primary",
+  className,
+  children,
+  onClick,
+}: ButtonProps) {
   return (
     <a
       href={href}
+      onClick={onClick}
       className={cn(
         "inline-flex items-center gap-1 rounded-[var(--radius-button)] px-5 py-3 text-[20px] font-semibold leading-[1.2] transition-colors",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-shell)]",

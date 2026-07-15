@@ -65,7 +65,8 @@ export function DetailModal({
         "max-h-[min(85vh,900px)] w-[calc(100%-48px)] max-w-[1120px] flex-col",
         "overflow-hidden rounded-[var(--radius-card)] bg-[var(--color-surface)] p-0",
         "shadow-2xl backdrop:bg-[var(--color-modal-backdrop)]",
-        "max-md:h-[100dvh] max-md:max-h-none max-md:w-screen max-md:max-w-none max-md:rounded-none max-md:shadow-none",
+        /* Near-full on small screens — small outer margin, keep radius */
+        "max-md:h-[calc(100dvh-24px)] max-md:max-h-[calc(100dvh-24px)] max-md:w-[calc(100%-24px)] max-md:max-w-none",
       ].join(" ")}
     >
       <button
