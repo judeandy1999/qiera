@@ -1,9 +1,9 @@
+import { sendAuditEmail } from "@/lib/email/resend";
 import { jsonErr, jsonOk } from "@/lib/form-validation";
 import { validateAuditPayload } from "@/lib/validate-audit";
 
 /**
- * Intelligence Audit form handler — validates and accepts the typed payload.
- * Pending production email/CRM integration — does not send externally.
+ * Intelligence Audit form handler — validates payload and emails via Resend.
  */
 export async function POST(request: Request) {
   let raw: unknown;
@@ -16,8 +16,15 @@ export async function POST(request: Request) {
   const { data, errors } = validateAuditPayload(raw);
   if (!data) return jsonErr(errors);
 
-  // TODO(production): forward `data` to email/CRM. Do not claim delivery.
-  void data;
+  const sent = await sendAuditEmail(data);
+  if (!sent.ok) {
+    console.error("[audit] email send failed:", sent.error);
+    return jsonErr(
+      { _form: "Something went wrong. Please try again." },
+      502,
+      "Delivery failed",
+    );
+  }
 
   return jsonOk();
 }

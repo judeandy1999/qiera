@@ -1,9 +1,9 @@
+import { sendContactEmail } from "@/lib/email/resend";
 import { jsonErr, jsonOk } from "@/lib/form-validation";
 import { validateContactPayload } from "@/lib/validate-contact";
 
 /**
- * Contact form handler — validates and accepts the typed payload.
- * Pending production email/CRM integration — does not send externally.
+ * Contact form handler — validates payload and emails via Resend.
  */
 export async function POST(request: Request) {
   let raw: unknown;
@@ -16,8 +16,15 @@ export async function POST(request: Request) {
   const { data, errors } = validateContactPayload(raw);
   if (!data) return jsonErr(errors);
 
-  // TODO(production): forward `data` to email/CRM. Do not claim delivery.
-  void data;
+  const sent = await sendContactEmail(data);
+  if (!sent.ok) {
+    console.error("[contact] email send failed:", sent.error);
+    return jsonErr(
+      { _form: "Something went wrong. Please try again." },
+      502,
+      "Delivery failed",
+    );
+  }
 
   return jsonOk();
 }

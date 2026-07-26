@@ -19,9 +19,11 @@ progress:
 **Status:** Phase 9 complete — ready for Phase 10  
 **Last updated:** 2026-07-15
 
-**Current focus:** Phase 10 — Accessibility, Performance, Testing, Visual QA  
-**Stopped at:** Phase 9 human-approved (`approved` 2026-07-15)
+**Current focus:** Form delivery (Resend) wired — configure `RESEND_API_KEY` in `.env.local`  
+**Stopped at:** FORM-06 email path implemented; Phase 10 still pending  
 
 ## Next
 
-Say **`start`** or **`continue`** for Phase 10 (final quality gate).
+1. Add Resend API key to `.env.local` (see `docs/form-delivery.md`)
+2. Smoke-test Contact + Audit submits
+3. Then Phase 10 (a11y / perf / tests / visual)

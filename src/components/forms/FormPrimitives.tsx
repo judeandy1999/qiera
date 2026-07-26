@@ -8,6 +8,14 @@ export const fieldControlClassName = cn(
   "disabled:cursor-not-allowed disabled:opacity-60",
 );
 
+/** Native OS dropdowns are usually light — force readable option colors. */
+export const selectControlClassName = cn(
+  fieldControlClassName,
+  "appearance-none pr-10",
+  "[&>option]:bg-white [&>option]:text-slate-900",
+  "[&>option:disabled]:text-slate-500",
+);
+
 export function FieldLabel({
   htmlFor,
   required,
@@ -82,7 +90,7 @@ export function SubmitButton({
       disabled={busy}
       aria-busy={busy}
       className={cn(
-        "inline-flex min-h-[48px] items-center justify-center gap-1 rounded-[var(--radius-button)] bg-[var(--color-accent)] px-6 py-3 text-[20px] font-semibold leading-[1.2] text-[var(--color-text-primary)] transition-opacity",
+        "inline-flex min-h-[48px] cursor-pointer items-center justify-center gap-1 rounded-[var(--radius-button)] bg-[var(--color-accent)] px-6 py-3 text-[20px] font-semibold leading-[1.2] text-[var(--color-text-primary)] transition-opacity",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-shell)]",
         "disabled:cursor-not-allowed disabled:opacity-70",
         className,

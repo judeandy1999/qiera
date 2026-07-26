@@ -8,6 +8,7 @@ import {
   FormBanner,
   SubmitButton,
   fieldControlClassName,
+  selectControlClassName,
 } from "@/components/forms/FormPrimitives";
 import { IntelligenceIcon } from "@/components/ui/IntelligenceIcon";
 import {
@@ -50,9 +51,11 @@ function SelectField({
         onChange={(e) => onChange(e.target.value)}
         aria-invalid={error ? true : undefined}
         aria-describedby={error ? `${id}-error` : undefined}
-        className={cn(fieldControlClassName, "appearance-none pr-10")}
+        className={selectControlClassName}
       >
-        <option value="">{placeholder}</option>
+        <option value="" disabled>
+          {placeholder}
+        </option>
         {options.map((opt) => (
           <option key={opt.value} value={opt.value}>
             {opt.label}

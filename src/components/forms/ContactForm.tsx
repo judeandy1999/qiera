@@ -8,6 +8,7 @@ import {
   FormBanner,
   SubmitButton,
   fieldControlClassName,
+  selectControlClassName,
 } from "@/components/forms/FormPrimitives";
 import { IntelligenceIcon } from "@/components/ui/IntelligenceIcon";
 import { contactCopy, contactTopicOptions } from "@/data/contact-options";
@@ -217,9 +218,11 @@ export function ContactForm({ initialTopic = "" }: ContactFormProps) {
             onChange={(e) => setTopic(e.target.value)}
             aria-invalid={errors.topic ? true : undefined}
             aria-describedby={errors.topic ? "contact-topic-error" : undefined}
-            className={cn(fieldControlClassName, "appearance-none pr-10")}
+            className={selectControlClassName}
           >
-            <option value="">{placeholders.topic}</option>
+            <option value="" disabled>
+              {placeholders.topic}
+            </option>
             {contactTopicOptions.map((opt) => (
               <option key={opt.value} value={opt.value}>
                 {opt.label}

@@ -61,7 +61,7 @@
 - **PAGE-03**: Security page (if reference supplied)
 - **PROC-01**: Seventh process step “Orchestrate Competency” if approved artwork/copy supplied
 - **LEV-01**: Leverage Share / Download if real workflow defined
-- **FORM-06**: Live email/CRM/webhook integration for form submissions
+- [~] **FORM-06**: Live email via Resend for Contact + Audit (`src/lib/email/resend.ts`); CRM/webhook still deferred
 - **LEGAL-03**: Counsel-approved final legal copy
 - **TYPE-01**: Font swap after visual comparison against references
 

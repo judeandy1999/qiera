@@ -22,7 +22,7 @@ export function Button({
       href={href}
       onClick={onClick}
       className={cn(
-        "inline-flex items-center gap-1 rounded-[var(--radius-button)] px-5 py-3 text-[20px] font-semibold leading-[1.2] transition-colors",
+        "inline-flex cursor-pointer items-center gap-1 rounded-[var(--radius-button)] px-5 py-3 text-[20px] font-semibold leading-[1.2] transition-colors",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-shell)]",
         variant === "primary" && "bg-[var(--color-accent)] text-[var(--color-text-primary)]",
         variant === "secondary" &&
