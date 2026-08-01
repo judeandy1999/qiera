@@ -15,7 +15,7 @@ cp .env.example .env.local
 | Variable | Purpose |
 |----------|---------|
 | `RESEND_API_KEY` | Resend API key |
-| `FORM_TO_EMAIL` | Destination inbox (default `admin@qiera.io`) |
+| `FORM_TO_EMAIL` | Comma-separated destination inboxes (default `admin@qiera.io,gergo@qiera.io`) |
 | `RESEND_FROM_EMAIL` | From address — `QIERA <no-reply@qiera.io>` (domain must be verified in Resend) |
 
 ## Behavior

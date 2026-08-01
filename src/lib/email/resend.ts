@@ -7,9 +7,19 @@ export type SendEmailResult =
   | { ok: true; id?: string }
   | { ok: false; error: string };
 
+const DEFAULT_FORM_RECIPIENTS = ["admin@qiera.io", "gergo@qiera.io"] as const;
+
+function parseRecipients(value: string | undefined): string[] {
+  if (!value?.trim()) return [...DEFAULT_FORM_RECIPIENTS];
+  return value
+    .split(",")
+    .map((email) => email.trim())
+    .filter(Boolean);
+}
+
 function getResendConfig() {
   const apiKey = process.env.RESEND_API_KEY?.trim();
-  const to = process.env.FORM_TO_EMAIL?.trim() || "admin@qiera.io";
+  const to = parseRecipients(process.env.FORM_TO_EMAIL);
   const from =
     process.env.RESEND_FROM_EMAIL?.trim() ||
     "QIERA <no-reply@qiera.io>";
@@ -62,7 +72,7 @@ async function sendViaResend(input: {
 
   const { data, error } = await resend.emails.send({
     from,
-    to: [to],
+    to,
     replyTo: input.replyTo,
     subject: input.subject,
     html,
