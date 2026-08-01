@@ -15,8 +15,8 @@ cp .env.example .env.local
 | Variable | Purpose |
 |----------|---------|
 | `RESEND_API_KEY` | Resend API key |
-| `FORM_TO_EMAIL` | Destination inbox (default `cjudeandy@gmail.com`) |
-| `RESEND_FROM_EMAIL` | From address — use `QIERA <onboarding@resend.dev>` until your domain is verified |
+| `FORM_TO_EMAIL` | Destination inbox (default `admin@qiera.io`) |
+| `RESEND_FROM_EMAIL` | From address — `QIERA <no-reply@qiera.io>` (domain must be verified in Resend) |
 
 ## Behavior
 
@@ -26,8 +26,8 @@ cp .env.example .env.local
 
 ## Production tip
 
-Verify a domain in Resend (e.g. `mail.qiera.com`) and set:
+Verify `qiera.io` in Resend, then use:
 
 ```env
-RESEND_FROM_EMAIL=QIERA <noreply@mail.qiera.com>
+RESEND_FROM_EMAIL=QIERA <no-reply@qiera.io>
 ```

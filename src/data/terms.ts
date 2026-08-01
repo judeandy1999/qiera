@@ -9,7 +9,7 @@ export const termsDocument: LegalDocument = {
   provisionalNotice: "Provisional copy — pending legal review.",
   intro:
     "Welcome to QIERA. These Terms of Service (“Terms”) govern your access to and use of QIERA’s website, tools, services, content, and any related offerings (collectively, the “Services”). By accessing or using our Services, you agree to these Terms.",
-  contactEmail: "legal@qiera.com",
+  contactEmail: "admin@qiera.io",
   sections: [
     {
       id: "acceptance-of-terms",

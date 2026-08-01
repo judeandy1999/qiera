@@ -8,7 +8,7 @@ export const cookiesDocument: LegalDocument = {
   provisionalNotice: "Provisional copy — pending legal review.",
   intro:
     "This Cookie Policy explains how QIERA Inc. (“QIERA”, “we”, “our”, or “us”) uses cookies and similar technologies when you visit our website or use our services.",
-  contactEmail: "legal@qiera.com",
+  contactEmail: "admin@qiera.io",
   sections: [
     {
       id: "what-are-cookies",

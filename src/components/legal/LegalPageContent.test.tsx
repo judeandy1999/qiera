@@ -33,8 +33,8 @@ describe("LegalPageContent", () => {
     }
 
     expect(
-      screen.getByRole("link", { name: "privacy@qiera.com" }),
-    ).toHaveAttribute("href", "mailto:privacy@qiera.com");
+      screen.getByRole("link", { name: "admin@qiera.io" }),
+    ).toHaveAttribute("href", "mailto:admin@qiera.io");
   });
 
   it("renders terms of service with fifteen sections", () => {
@@ -44,8 +44,8 @@ describe("LegalPageContent", () => {
     ).toBeInTheDocument();
     expect(termsDocument.sections).toHaveLength(15);
     expect(
-      screen.getByRole("link", { name: "legal@qiera.com" }),
-    ).toHaveAttribute("href", "mailto:legal@qiera.com");
+      screen.getByRole("link", { name: "admin@qiera.io" }),
+    ).toHaveAttribute("href", "mailto:admin@qiera.io");
   });
 
   it("renders cookie policy table", () => {

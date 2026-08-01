@@ -8,7 +8,7 @@ export const privacyDocument: LegalDocument = {
   provisionalNotice: "Provisional copy — pending legal review.",
   intro:
     "QIERA Inc. (“QIERA”, “we”, “our”, or “us”) respects your privacy and is committed to protecting the personal information you share with us.",
-  contactEmail: "privacy@qiera.com",
+  contactEmail: "admin@qiera.io",
   sections: [
     {
       id: "information-we-collect",

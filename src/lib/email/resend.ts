@@ -9,10 +9,10 @@ export type SendEmailResult =
 
 function getResendConfig() {
   const apiKey = process.env.RESEND_API_KEY?.trim();
-  const to = process.env.FORM_TO_EMAIL?.trim() || "cjudeandy@gmail.com";
+  const to = process.env.FORM_TO_EMAIL?.trim() || "admin@qiera.io";
   const from =
     process.env.RESEND_FROM_EMAIL?.trim() ||
-    "QIERA <onboarding@resend.dev>";
+    "QIERA <no-reply@qiera.io>";
 
   return { apiKey, to, from };
 }
