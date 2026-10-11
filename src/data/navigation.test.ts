@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { primaryNav, primaryCta, legalNav } from "./navigation";
+import { primaryNav, primaryCta, legalNav, servicesNav } from "./navigation";
 
 test("primaryNav contains exactly the locked v1 link set, in order", () => {
   const labels = primaryNav.map((item) => item.label);
@@ -8,6 +8,7 @@ test("primaryNav contains exactly the locked v1 link set, in order", () => {
     "Process",
     "Solutions",
     "Leverages",
+    "Services",
     "Network",
     "Contact",
   ]);
@@ -42,6 +43,13 @@ test("primaryNav homepage hashes target the four section ids", () => {
     "/#process",
     "/#solutions",
     "/#leverages",
+  ]);
+});
+
+test("servicesNav lists both service pages", () => {
+  expect(servicesNav.map((item) => item.href)).toEqual([
+    "/ecommerce-growth-consulting",
+    "/fractional-ecommerce-cmo",
   ]);
 });
 

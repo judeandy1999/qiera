@@ -1,5 +1,6 @@
 import { Logo } from "@/components/ui/Logo";
 import { primaryNav, legalNav } from "@/data/navigation";
+import { flattenNavItems } from "@/lib/nav-flatten";
 
 export function Footer() {
   return (
@@ -8,7 +9,7 @@ export function Footer() {
         <div className="flex flex-wrap items-start justify-between gap-6 pb-6">
           <Logo showTagline />
           <nav aria-label="Footer" className="flex flex-wrap items-center gap-4">
-            {primaryNav.map((item) => (
+            {flattenNavItems(primaryNav).map((item) => (
               <a
                 key={item.href}
                 href={item.href}

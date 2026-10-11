@@ -2,11 +2,12 @@ import { expect, test } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { Footer } from "./Footer";
 import { primaryNav, legalNav } from "@/data/navigation";
+import { flattenNavItems } from "@/lib/nav-flatten";
 
 test("footer renders the single-source nav set, copyright, and legal links, with no Pricing/Resources/Security", () => {
   render(<Footer />);
 
-  for (const item of primaryNav) {
+  for (const item of flattenNavItems(primaryNav)) {
     expect(screen.getAllByText(item.label).length).toBeGreaterThan(0);
   }
 

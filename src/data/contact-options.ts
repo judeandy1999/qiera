@@ -3,6 +3,8 @@ export type SelectOption = { value: string; label: string };
 /** Contact help-topic options — labels not visible in PNG; locked in 07-CONTEXT. */
 export const contactTopicOptions: SelectOption[] = [
   { value: "partnership", label: "Partnership Inquiry" },
+  { value: "growth-consulting", label: "Ecommerce Growth Consulting" },
+  { value: "fractional-cmo", label: "Fractional Ecommerce CMO" },
   { value: "general", label: "General Question" },
   { value: "sales", label: "Sales / Demo" },
   { value: "support", label: "Support" },

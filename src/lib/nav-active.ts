@@ -1,3 +1,5 @@
+import type { NavItem } from "@/types/navigation";
+
 /** Shared active-state check for primary nav (routes + homepage hashes). */
 export function isNavItemActive(
   pathname: string,
@@ -18,4 +20,17 @@ export function isNavItemActive(
 
   if (href === "/") return pathname === "/";
   return pathname === href || pathname.startsWith(`${href}/`);
+}
+
+export function isNavEntryActive(
+  pathname: string,
+  hash: string,
+  item: NavItem,
+): boolean {
+  if (item.children?.length) {
+    return item.children.some((child) =>
+      isNavItemActive(pathname, hash, child.href),
+    );
+  }
+  return isNavItemActive(pathname, hash, item.href);
 }
